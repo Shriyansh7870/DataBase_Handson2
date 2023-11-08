@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const { connection } = require("./config/db");
-const Route = require("./Route/EmployeeRoute");
+const connection = require("./config/db");
+const Route = require("./Route/userRouter");
 
 app.use(express.json());
 app.use(cors());
